@@ -6,7 +6,7 @@
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 02:14:01 by hfandino          #+#    #+#             */
-/*   Updated: 2026/02/18 17:53:46 by hfandnino        ###   ########.fr       */
+/*   Updated: 2026/02/18 23:57:37 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,7 @@ int	ft_putstr(char	*str)
 	write(1, "\n", 1);
 	return (i);
 }
-/*esto es una prueba de que estuve aqui y se sincorino todo*/
-
+/*todo bien*/
 int	main(void)
 {
 	char	*str;
