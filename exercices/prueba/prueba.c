@@ -5,36 +5,34 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/18 02:14:01 by hfandino          #+#    #+#             */
-/*   Updated: 2026/02/19 13:27:59 by hfandino         ###   ########.fr       */
+/*   Created: 2026/02/20 01:05:03 by hfandino          #+#    #+#             */
+/*   Updated: 2026/02/20 01:35:37 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
-#include <stdio.h>
 
-int	ft_putstr(char	*str)
+void	ft_rev_prin(void)
 {
-	int	i;
+	char	alpha;
+	char	odd;
 
-	i = 0;
-	while (str[i] != '\0')
+	alpha = 'a';
+	while (alpha <= 'z')
 	{
-		write(1, &str[i], 1);
-		i++;
+		if (alpha % 2 == 0)
+		{	
+			odd = alpha - 32;
+			write(1, &odd, 1);
+		}	
+		else
+			write(1, &alpha, 1);
+		alpha++;
 	}
-
 	write(1, "\n", 1);
-	return (i);
 }
-/*todo bien*/
-int	main(void)
-{
-	char	*str;
-	int		reslt;
-	str = "Hola mundo";
-	reslt = ft_putstr(str);
-	printf("%i \n", reslt);
-	return (0);
 
+int main(void)
+{
+	ft_rev_prin();
+	return (0);
 }
