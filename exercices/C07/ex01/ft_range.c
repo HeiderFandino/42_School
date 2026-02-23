@@ -1,56 +1,59 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/20 16:16:00 by hfandino          #+#    #+#             */
-/*   Updated: 2026/02/23 11:23:05 by hfandino         ###   ########.fr       */
+/*   Created: 2026/02/23 12:50:00 by hfandino          #+#    #+#             */
+/*   Updated: 2026/02/23 13:40:59 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-char	*ft_strdup(char *str)
+int	*ft_range(int min, int max )
 {
-	char	*dest;
-	int		i;
-	int		lent;
+	int	*num_range;
+	int	i;
 
 	i = 0;
-	lent = 0;
-	if (str == NULL)
+	if (min >= max)
 		return (NULL);
-	while (str[lent] != '\0')
-	{
-		lent++;
-	}
-	dest = (char *)malloc(sizeof(char) * (lent + 1));
-	if (dest == NULL)
+	num_range = (int *)malloc(sizeof(int) * (max - min));
+	if (num_range == NULL)
 		return (NULL);
-	while (str[i] != 0)
+	while (min < max)
 	{
-		dest[i] = str[i];
+		num_range[i] = min;
 		i++;
+		min++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	return (num_range);
 }
 /*
 int	main(void)
 {
-	char	*original;
-	char	*copia;
+	int	min;
+	int	max;
+	int	*reslt;
+	int	i;
+	int	size;
 
-	original = "Hola Mundo 42";
-	copia = ft_strdup(original);
-	if (copia == NULL)
+	i = 0;
+	min = 5;
+	max = 10;
+	size = (max - min);
+	reslt = ft_range(min, max);
+	if(reslt == NULL)
 		return (1);
-	printf("Original: %s | %p\n", original, original);
-	printf("Copia:    %s | %p\n", copia, copia);
-	free(copia);
+	while(i < size)
+	{
+		printf ("%d - %p \n", reslt[i], &reslt[i]);
+		i++;
+	}
+	free(reslt);
 	return (0);
+
 }
-*/
+*/	
