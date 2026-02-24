@@ -1,59 +1,59 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: hfandnino <hfandino@student.42barcelona.c  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/23 12:50:00 by hfandino          #+#    #+#             */
-/*   Updated: 2026/02/24 16:07:28 by hfandnino        ###   ########.fr       */
+/*   Created: 2026/02/24 16:12:31 by hfandnino         #+#    #+#             */
+/*   Updated: 2026/02/24 17:13:20 by hfandnino        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
-int	*ft_range(int min, int max )
+int	ft_ultimate_range(int **range, int min, int max)
 {
-	int	i;
-	int	*range_num;
-
-	i = 0;
-	if (min >= max)
-		return (NULL);
-	range_num = (int *) malloc(sizeof (int) * (max - min));
-	if (range_num == NULL)
-		return (NULL);
-	while (min < max)
-	{
-		range_num[i] = min;
-		i++;
-		min++;
-	}
-	return (range_num);
-}
-/*
-int	main(void)
-{
-	int	min;
-	int	max;
-	int	*reslt;
 	int	i;
 	int	size;
 
 	i = 0;
-	min = 5;
-	max = 10;
-	size = (max - min);
-	reslt = ft_range(min, max);
-	if(reslt == NULL)
+	size = max - min;
+	if (min >= max)
+	{
+		*range = NULL;
+		return (0);
+	}
+	*range = (int *) malloc(sizeof (int) * size);
+	if (*range == NULL)
+		return (-1);
+	while (i < size)
+	{
+		(*range)[i] = min;
+		i++;
+		min++;
+	}
+	return (size);
+}
+/*
+int	main(void)
+{
+	int	*reslt;
+	int	size;
+	int	i;
+
+	i = 0;
+	size = ft_ultimate_range(&reslt, 5, 10);
+	if(size == -1)
 		return (1);
+	printf("Size: %d\n", size);
 	while(i < size)
 	{
-		printf ("%d - %p \n", reslt[i], &reslt[i]);
+		printf("%d", reslt[i]);
 		i++;
 	}
+	printf("\n");
 	free(reslt);
 	return (0);
-
-}	
+}
 */
