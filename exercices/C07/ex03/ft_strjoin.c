@@ -6,7 +6,7 @@
 /*   By: hfandnino <hfandino@student.42barcelona.c  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 18:02:13 by hfandnino         #+#    #+#             */
-/*   Updated: 2026/02/24 18:44:09 by hfandnino        ###   ########.fr       */
+/*   Updated: 2026/03/06 19:35:57 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
@@ -62,14 +62,14 @@ char	*ft_strjoin(int size, char **str, char *sep)
 	}
 	res = malloc (sizeof(char) * ft_get_full_len(size, str, sep));
 	if (!res)
-		return (NULL)
-		ptr = res;
+		return (NULL);
+	ptr = res;
 	i = 0;
 	while (i < size)
 	{
 		j = 0;
-		while (strs[i][j])
-			*ptr++ = strs[i][j++];
+		while (str[i][j])
+			*ptr++ = str[i][j++];
 		j = 0;
 		if (i < size - 1)
 			while (sep[j])
