@@ -6,7 +6,7 @@
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:18:59 by hfandino          #+#    #+#             */
-/*   Updated: 2026/04/20 17:17:01 by hfandino         ###   ########.fr       */
+/*   Updated: 2026/04/20 20:33:03 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,4 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		dest[i] = '\0';
 	}
 	return (src_len);
-/*prueba*/
 }

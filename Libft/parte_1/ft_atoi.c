@@ -1,25 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 16:26:18 by hfandino          #+#    #+#             */
-/*   Updated: 2026/04/20 21:30:14 by hfandino         ###   ########.fr       */
+/*   Created: 2026/04/20 21:30:40 by hfandino          #+#    #+#             */
+/*   Updated: 2026/04/20 21:33:49 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_atoi(char *str)
 {
-	size_t	i;
+	int	i;
+	int	reslt;
+	int	signo;
 
 	i = 0;
-	if (n == 0)
-		return (0);
-	while (i < n && s1[i] == s2[i] && s1[i] != '\0')
+	reslt = 0;
+	signo = 1;
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
-	if (i == n)
-		return (0);
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	if (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+			signo = -1;
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		reslt = (reslt * 10) + (str[i] - '0');
+		i++;
+	}
+	return (reslt * signo);
 }
