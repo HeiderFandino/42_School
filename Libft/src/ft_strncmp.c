@@ -6,9 +6,11 @@
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 16:26:18 by hfandino          #+#    #+#             */
-/*   Updated: 2026/04/20 21:30:14 by hfandino         ###   ########.fr       */
+/*   Updated: 2026/04/30 16:36:19 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

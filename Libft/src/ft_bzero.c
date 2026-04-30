@@ -6,9 +6,11 @@
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/19 22:07:36 by hfandino          #+#    #+#             */
-/*   Updated: 2026/04/19 22:21:07 by hfandino         ###   ########.fr       */
+/*   Updated: 2026/04/30 16:39:45 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

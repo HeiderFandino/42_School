@@ -6,9 +6,11 @@
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 20:36:55 by hfandino          #+#    #+#             */
-/*   Updated: 2026/04/20 21:22:14 by hfandino         ###   ########.fr       */
+/*   Updated: 2026/04/30 16:32:54 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

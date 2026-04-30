@@ -6,9 +6,11 @@
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 15:48:24 by hfandino          #+#    #+#             */
-/*   Updated: 2026/04/20 15:48:49 by hfandino         ###   ########.fr       */
+/*   Updated: 2026/04/30 16:38:08 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

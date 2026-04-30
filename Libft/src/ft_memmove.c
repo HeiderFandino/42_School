@@ -6,9 +6,11 @@
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/19 22:51:08 by hfandino          #+#    #+#             */
-/*   Updated: 2026/04/19 23:12:56 by hfandino         ###   ########.fr       */
+/*   Updated: 2026/04/30 16:42:20 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

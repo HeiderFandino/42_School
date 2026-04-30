@@ -6,11 +6,13 @@
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 21:30:40 by hfandino          #+#    #+#             */
-/*   Updated: 2026/04/20 21:33:49 by hfandino         ###   ########.fr       */
+/*   Updated: 2026/04/30 16:27:21 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+#include "Libft.h"
+
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	reslt;

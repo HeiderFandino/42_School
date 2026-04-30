@@ -6,9 +6,11 @@
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/19 22:24:12 by hfandino          #+#    #+#             */
-/*   Updated: 2026/04/19 22:56:15 by hfandino         ###   ########.fr       */
+/*   Updated: 2026/04/30 16:41:57 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
