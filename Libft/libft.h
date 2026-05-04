@@ -6,7 +6,7 @@
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/30 15:16:08 by hfandino          #+#    #+#             */
-/*   Updated: 2026/05/04 11:28:23 by hfandino         ###   ########.fr       */
+/*   Updated: 2026/05/04 18:56:51 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 
 #endif
