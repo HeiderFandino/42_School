@@ -6,7 +6,7 @@
 /*   By: hfandino <hfandino@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/04 16:41:11 by hfandino          #+#    #+#             */
-/*   Updated: 2026/05/04 18:57:17 by hfandino         ###   ########.fr       */
+/*   Updated: 2026/05/04 23:18:30 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+
+
 /*
-// FT_STRLJOIN //
+/ FT_STRLJOIN //
 int	main(void)
 {
 	char const *s1;
