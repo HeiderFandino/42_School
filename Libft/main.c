@@ -6,7 +6,7 @@
 /*   By: hfandino <hfandino@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/04 16:41:11 by hfandino          #+#    #+#             */
-/*   Updated: 2026/05/04 23:18:30 by hfandino         ###   ########.fr       */
+/*   Updated: 2026/05/05 11:57:20 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,18 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/*
+//FT_STRTRIM//
+int	main(void)
+{
+	char	*res;
 
-
+	res = ft_strtrim("   hola   ", " ");
+	printf("%s\n", res);
+	free(res);
+	return (0);
+}
+*/
 /*
 / FT_STRLJOIN //
 int	main(void)

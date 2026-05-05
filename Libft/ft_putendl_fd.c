@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: hfandino <hfandino@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/19 22:24:12 by hfandino          #+#    #+#             */
-/*   Updated: 2026/05/05 18:27:55 by hfandino         ###   ########.fr       */
+/*   Created: 2026/05/05 17:25:27 by hfandino          #+#    #+#             */
+/*   Updated: 2026/05/05 17:28:23 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	ft_putendl_fd(char *s, int fd)
 {
-	unsigned char		*p;
-	const unsigned char	*dst;
-	size_t				i;
+	size_t	i;
 
-	if (!dest && !src)
-		return (NULL);
-	p = (unsigned char *) dest;
-	dst = (const unsigned char *) src;
+	if (!s)
+		return ;
 	i = 0;
-	while (i < n)
+	while (s[i] != '\0')
 	{
-		p[i] = dst[i];
+		write(fd, &s[i], 1);
 		i++;
 	}
-	return (dest);
+	write(fd, "\n", 1);
 }
