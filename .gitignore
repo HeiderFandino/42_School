@@ -3,3 +3,5 @@
 strdup
 prueba
 .vscode/
+*.o
+
