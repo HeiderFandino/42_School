@@ -8,7 +8,7 @@ OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJS) libft.h
+$(NAME): $(OBJS) libft.h Makefile
 	ar rcs $(NAME) $(OBJS)
 
 %.o: %.c
